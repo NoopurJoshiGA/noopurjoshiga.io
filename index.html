@@ -4,100 +4,131 @@
   <meta charset="utf-8">
   <title>Noopur Joshi</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="scss/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-</head>
-<body>
+  <script type="text/javascript" src="js/typed.js" charset="utf-8"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet"></head>
+  <body>
 
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark bg-light">
-    <a class="navbar-brand" href="#">Noopur Joshi</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav float-md-right">
-        <a class="nav-link nav-item" href="#about">About</a>
-        <a class="nav-link nav-item" href="#projects">Projects</a>
-        <a class="nav-link nav-item" href="#projects">My Journey</a>
-        <a class="nav-link nav-item" href="#">Contact</a>
+    <!-- TODO: make navbar items move to the right -->
+    <!-- TODO: make a logo and align it to the left -->
+    <!-- TODO: add responsive burger menu -->
+    <nav class="navbar sticky-top navbar-expand-lg">
+      <a class="navbar-brand" href="#">Noopur Joshi</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav float-md-right">
+          <a class="nav-link nav-item" href="#about">About</a>
+          <a class="nav-link nav-item" href="#projects">Projects</a>
+          <a class="nav-link nav-item" href="#projects">My Journey</a>
+          <a class="nav-link nav-item" href="#">Contact</a>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- TODO: Make text smaller with media queries - mobile and tablet -->
+    <!-- TODO: Add typewrite effect for headings -->
+    <section class="home text-center w-100 mw-100">
+      <div class="container container-fluid" id="home">
+        <h1>< Hi, I'm Noopur Joshi /></h1>
+        <div id="typed-strings">
+          <p class"text-white">A Junior Full Stack Web Developer</p>
+          <p class"text-white">Nature & Avocado Lover</p>
+          <p class"text-white">Jedi</p>
+        </div>
+        <h2><span class="text-white" id="typed"></span></h2>
+
+        <script>
+        let typed = new Typed('#typed',{
+          stringsElement: '#typed-strings',
+          backSpeed: 40,
+          typeSpeed: 40,
+          loop: true
+        });
+      </script>
+      <br>
+      <a href="#about" class="btn homeBtn">See More</a>
+    </div>
+  </section>
+
+  <!-- About me -->
+  <section class="about" id="about">
+    <h2>About me</h2>
+    <div class="container">
+      <!-- TODO: Crop image to be a circle and align it in the middle -->
+      <img class="profile-picture" src="images/noopur.jpg" alt="noopur-profile"/>
+
+      <p class=" text-center">I’m fueled by ramen, matcha, Indian chai, meditation and ...good code</p>
+      <div class="row">
+        <div class="col-sm bg-dark text-center">
+          <p>My flair for problem solving and fascination for technology led me to taking a Computer Science degree during university. After graduating, I spent couple of years in a technical / client-facing hybrid role, which allowed me to not only practice the software development process but also to understand the client’s requirements.</p>
+          <p>As of June, I enrolled in General Assembly’s Web Development Immersive course to develop my skills further and dive deeper into programming.</p>
+        </div>
+        <div class="col-sm text-center">
+          <p>My time at General Assembly taught me that perseverance, curiosity and a logical approach to problem solving is key to strive as a Web Developer.</p>
+          <p>I’m looking for opportunities to work as a Full Stack Developer where I can translate my education and experience into an agile and creative workplace.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <h2>These are my skills</h2>
+    <div class="col-sm-12 text-center">
+      <ul class="skills-icons">
+        <li><i class="fab fa-react"></i></li>
+        <li><i class="fab fa-angular"></i></li>
+        <li><i class="fab fa-js-square"></i></li>
+        <li><i class="fab fa-html5"></i></li>
+        <li><i class="fab fa-css3-alt"></i></li>
+        <li><i class="fab fa-node-js"></i></li>
       </ul>
     </div>
-  </nav>
-
-  <section class="text-center w-100 mw-100 bg-primary">
-  <div class="h-100 mh-100 bg-light container container-fluid" id="home">
-    <h1>Hi, I'm Noopur Joshi</h1>
-    <h2>A Junior Full Stack Web Developer</h2>
-    <a href="#about" class="btn btn-outline-primary">See More</a>
-  </div>
-</section>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-sm">
-        One of three columns
-      </div>
-      <div class="col-sm">
-        One of three columns
-      </div>
-      <div class="col-sm">
-        One of three columns
-      </div>
-    </div>
-  </div>
-
-<!-- About me -->
-  <section id="about">
-    <h2>About me</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
   </section>
 
-<!-- Skills -->
-  <section id="skills">
-    <h2>These are my skills</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-  </section>
-
-<!-- Projects -->
-  <section id="projects">
+  <!-- Projects -->
+  <section class="projects" id="projects">
     <h2>These are my projects</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
   </section>
 
-<!-- Journey -->
-  <section id="journey">
+  <!-- Journey -->
+  <section class="journey" id="journey">
     <h2>My Journey</h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
   </section>
 
-<!-- Contact -->
-  <section id="contact">
+  <!-- Contact -->
+  <section id="contact" class="contact text-center">
     <h2>Get In Touch</h2>
-    <a href="mailto:noopur.joshi13@gmail.com">noopur.joshi13@gmail.com</a>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+    <a href="mailto:noopur.joshi13@gmail.com"><strong>noopur.joshi13@gmail.com</strong></a>
+    <div class="col-sm-12 text-center">
+      <ul class="social-icons">
+        <li><a href="" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="" target="_blank"><i class="fab fa-github"></i></a></li>
+      </ul>
+    </div>
   </section>
 
-<!-- Footer -->
-  <section class="w-100 bg-dark" id="footer">
-    <div class="container text-center">
-    <p class="text-white-50">
-      Copyright 2018 Noopur Joshi
-    </p>
+  <!-- Footer -->
+  <footer class="w-100 footer text-center" id="footer">
+    <p class="sub">© Copright 2018 Noopur Joshi - All Rights Reserved</p>
   </div>
-  </section>
+</footer>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 </html>

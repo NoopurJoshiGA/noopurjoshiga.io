@@ -1,0 +1,164 @@
+/* Convert to scss */
+
+
+/* Main */
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+
+a {
+  color: black;
+}
+
+/* Typography */
+h1 {
+  padding: 20px;
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 200;
+  padding: 20px 0 20px 0;
+  color: white;
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+/* Navbar */
+
+.navbar {
+  color: black;
+  background-color: white;
+}
+
+/* Home section */
+
+.home {
+  padding: 0;
+  background-color: #220547;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.homeBtn {
+  background-color: transparent;
+  border: 2px solid #ff9d00;
+  color: #ff9d00;
+  width: 200px;
+  margin: 40px 0 40px 0;
+  padding: 10px;
+}
+
+.homeBtn:hover {
+  background-color: #ff9d00;
+  color: white;
+  transition: 0.3s;
+}
+
+.typed-cursor.typed-cursor--blink {
+  color: white;
+}
+
+
+
+/* About section */
+
+.about {
+  height: 100vh;
+}
+
+.profile-picture {
+  width: 250px;
+  height: 300px;
+  border-radius: 100%;
+}
+
+/* Skills section */
+
+.skills {
+  background-color: #f8f9fa;
+  padding: 60px 0 60px 0;
+}
+
+.skills-icons {
+  list-style: none;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0px;
+}
+
+.skills-icons li {
+  float: left;
+  padding: 20px;
+}
+
+.skills-icons li i {
+  font-size: 40px;
+}
+
+
+/* Projects section */
+.projects {
+
+}
+
+.journey {
+  background-color: #f8f9fa;
+  padding: 60px 0 60px 0;
+}
+
+.contact {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #220547;
+  color: white;
+}
+
+.social-icons {
+  list-style: none;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0px;
+}
+
+.social-icons li {
+  float: left;
+  padding: 20px;
+}
+
+.social-icons li a {
+  font-size: 40px;
+  color: #fff;
+  opacity: 0.4;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.social-icons li a:hover {
+  opacity: 1;
+}
+
+/* Footer */
+footer {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #220547;
+}
+
+footer p {
+  opacity: 0.4;
+  color: white;
+}
