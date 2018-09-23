@@ -3,51 +3,55 @@
 <head>
   <meta charset="utf-8">
   <title>Noopur Joshi</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="scss/style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="scss/style.css">
   <script type="text/javascript" src="js/typed.js" charset="utf-8"></script>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet"></head>
-  <body>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
 
-    <!-- TODO: make navbar items move to the right -->
-    <!-- TODO: make a logo and align it to the left -->
-    <!-- TODO: add responsive burger menu -->
-    <nav class="navbar sticky-top navbar-expand-lg">
-      <a class="navbar-brand" href="#">Noopur Joshi</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav float-md-right">
-          <a class="nav-link nav-item" href="#about">About</a>
-          <a class="nav-link nav-item" href="#projects">Projects</a>
-          <a class="nav-link nav-item" href="#projects">My Journey</a>
-          <a class="nav-link nav-item" href="#">Contact</a>
-        </ul>
+<body>
+
+
+  <!-- TODO: make navbar items move to the right -->
+  <!-- TODO: make a logo and align it to the left -->
+  <!-- TODO: add responsive burger menu -->
+  <nav class="navbar sticky-top navbar-expand-lg">
+    <a class="navbar-brand" href="#">Noopur Joshi</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="nav navbar-nav navbar-right">
+        <a class="nav-link nav-item" href="#about">About</a>
+        <a class="nav-link nav-item" href="#projects">Projects</a>
+        <a class="nav-link nav-item" href="#projects">My Journey</a>
+        <a class="nav-link nav-item" href="#">Contact</a>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- TODO: Make text smaller with media queries - mobile and tablet -->
+  <!-- TODO: Add typewrite effect for headings -->
+  <section class="home text-center w-100 mw-100">
+    <div class="container container-fluid" id="home">
+      <h1>< Hi, I'm Noopur Joshi /></h1>
+      <div id="typed-strings">
+        <p class"text-white">A Junior Full Stack Web Developer</p>
+        <p class"text-white">Nature & Avocado Lover</p>
+        <p class"text-white">Jedi</p>
       </div>
-    </nav>
+      <h2><span class="text-white" id="typed"></span></h2>
 
-    <!-- TODO: Make text smaller with media queries - mobile and tablet -->
-    <!-- TODO: Add typewrite effect for headings -->
-    <section class="home text-center w-100 mw-100">
-      <div class="container container-fluid" id="home">
-        <h1>< Hi, I'm Noopur Joshi /></h1>
-        <div id="typed-strings">
-          <p class"text-white">A Junior Full Stack Web Developer</p>
-          <p class"text-white">Nature & Avocado Lover</p>
-          <p class"text-white">Jedi</p>
-        </div>
-        <h2><span class="text-white" id="typed"></span></h2>
-
-        <script>
-        let typed = new Typed('#typed',{
-          stringsElement: '#typed-strings',
-          backSpeed: 40,
-          typeSpeed: 40,
-          loop: true
-        });
+      <script>
+      let typed = new Typed('#typed',{
+        stringsElement: '#typed-strings',
+        backSpeed: 40,
+        typeSpeed: 40,
+        loop: true
+      });
       </script>
       <br>
       <a href="#about" class="btn homeBtn">See More</a>
@@ -56,76 +60,187 @@
 
   <!-- About me -->
   <section class="about" id="about">
-    <h2>About me</h2>
+    <h2>About Me</h2>
     <div class="container">
       <!-- TODO: Crop image to be a circle and align it in the middle -->
-      <img class="profile-picture" src="images/noopur.jpg" alt="noopur-profile"/>
+      <!-- <img class="profile-picture" src="images/Noopur-8.jpg" alt="noopur-profile"/> -->
 
       <p class=" text-center">I’m fueled by ramen, matcha, Indian chai, meditation and ...good code</p>
       <div class="row">
-        <div class="col-sm bg-dark text-center">
-          <p>My flair for problem solving and fascination for technology led me to taking a Computer Science degree during university. After graduating, I spent couple of years in a technical / client-facing hybrid role, which allowed me to not only practice the software development process but also to understand the client’s requirements.</p>
-          <p>As of June, I enrolled in General Assembly’s Web Development Immersive course to develop my skills further and dive deeper into programming.</p>
+        <div class="col-sm text-center">
+          <div class="about-left">
+            <p>My flair for problem solving and fascination for technology led me to taking a Computer Science degree during university. After graduating, I spent couple of years in a technical / client-facing hybrid role, which allowed me to not only practice the software development process but also to understand the client’s requirements.</p>
+            <p>As of June, I enrolled in General Assembly’s Web Development Immersive course to develop my skills further and dive deeper into programming.</p>
+          </div>
         </div>
         <div class="col-sm text-center">
-          <p>My time at General Assembly taught me that perseverance, curiosity and a logical approach to problem solving is key to strive as a Web Developer.</p>
-          <p>I’m looking for opportunities to work as a Full Stack Developer where I can translate my education and experience into an agile and creative workplace.</p>
+          <div class="about-right">
+            <p>My time at General Assembly taught me that perseverance, curiosity and a logical approach to problem solving is key to strive as a Web Developer.</p>
+            <p>I’m looking for opportunities to work as a Full Stack Developer where I can translate my education and experience into an agile and creative workplace.</p>
+          </div>
         </div>
       </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+      <h2></h2>
+      <div class="col-sm-12 text-center">
+        <ul class="skills-icons">
+          <li><i class="fab fa-react"></i></li>
+          <li><i class="fab fa-angular"></i></li>
+          <li><i class="fab fa-js-square"></i></li>
+          <li><i class="fab fa-html5"></i></li>
+          <li><i class="fab fa-css3-alt"></i></li>
+          <li><i class="fab fa-node-js"></i></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>My Work</h2>
+      <div class="container text-center">
+
+        <div class="row project-row-1 project-row">
+          <div class="project-4 project col-sm-6 bg-dark">
+          </div>
+          <div class="project col-sm-6">
+            <p>'Boke' is full-stack application developed using Express JS and Mongo database for the back-end; ReactJS, HTML, CSS for the front-end.
+              The application serves as a networking platform, allowing users to register as either a photographer or a model, search and filter users based on their location, upload and comment on images.
+            </p>
+            <p>
+              I used Trello to formulate a plan and note down user stories and Sketch to create wireframes.
+              I used a mobile-first approach to develop the application, and later ensured that it was fully responsive on tablet and desktop.
+              Additionally, I used three external API’s - Postcodes.io, FileStack and Leaflet.
+            </p>
+            <p>This project was built as my final project for General Assembly's Web Immersive Programme.</p>
+            <!-- <h4>Technologies</h4> -->
+            <!-- <ul class="technology-icons">
+              <li><i class="fab fa-html5"></i><span>HTML5</span></li>
+              <li><i class="fab fa-css3"></i><span>CSS3</span></li>
+              <li><i class="fab fa-js-square"></i><span>Vanilla JavaScript</span></li>
+            </ul> -->
+            <ul class="project-icons">
+              <li><a class="project-link" href="https://github.com/noopsyjoshi/wdi-project-4"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <a href="https://boke-webapp.herokuapp.com/" class="btn openProjectBtn">Open Project</a>
+          </div>
+        </div>
+
+
+        <div class="row project-row project-row-2">
+          <div class="project-1 project col-sm-6 bg-dark">
+          </div>
+          <div class="project col-sm-6">
+            <p>Developed a Star Wars version of the classic arcade game, Space Invaders, using Vanilla Javascript, HTML and CSS. Designed as a one player game where you can move the spaceship left and right, and shoot at the enemies by pressing the spacebar. Defeat the Death Star and you beat the game.</p>
+            <p>This game was built as my first project for General Assembly's Web Immersive Programme.</p>
+            <h4>Technologies</h4>
+            <ul class="technology-icons">
+              <li><i class="fab fa-html5"></i><span>HTML5</span></li>
+              <li><i class="fab fa-css3"></i><span>CSS3</span></li>
+              <li><i class="fab fa-js-square"></i><span>Vanilla JavaScript</span></li>
+            </ul>
+            <ul class="project-icons">
+              <li><a class="project-link" href="https://github.com/noopsyjoshi/wdi-project-one/"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <a href="https://boke-webapp.herokuapp.com/" class="btn openProjectBtn">Open Project</a>
+          </div>
+        </div>
+
+        <div class="row project-row project-row-3">
+          <div class="project-2 project col-sm-6 bg-dark">
+          </div>
+          <div class="project col-sm-6 bg-info">
+            <p>Developed a full-stack, RESTful application which allows users to create, edit, delete posts and comments (Instagram clone). The application includes a Mongo database, EJS template for the front-end, authentication and Bulma CSS framework for styling.</p>
+            <p>This game was built as my second project for General Assembly's Web Immersive Programme.</p>
+            <h4>Technologies</h4>
+            <ul class="technology-icons">
+              <li><i class="fab fa-html5"></i><span>HTML5</span></li>
+              <li><i class="fab fa-css3"></i><span>CSS3</span></li>
+              <li><i class="fab fa-js-square"></i><span>Vanilla JavaScript</span></li>
+            </ul>
+            <ul class="project-icons">
+              <li><a class="project-link" href="https://github.com/noopsyjoshi/wdi-project-two"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <a href="https://boke-webapp.herokuapp.com/" class="btn openProjectBtn">Open Project</a>
+          </div>
+        </div>
+
+        <div class="row project-row project-row-4">
+          <div class="project-3 project col-sm-6 bg-dark">
+          </div>
+          <div class="project col-sm-6 bg-info">
+            <p>I worked in a pair to create a MEAN full stack application which automates a users travel itinerary based on the location, duration, type of accommodation and user selected activities.
+              I worked alongside my teammate to construct a project timeline (we were given a week), write and prioritise thoughtful user stories on Trello, and closely collaborate to manage the GitHub branches, conflicts and merges in our code.
+              The application is created using a Mongo database, NodeJS, ExpressJS and AngularJS.
+              The project is styled with Bulma CSS framework, includes authentication and automated tests built with Mocha and Chai.
+            </p>
+            <p>This game was built as my third project for General Assembly's Web Immersive Programme.</p>
+            <h4>Technologies</h4>
+            <ul class="technology-icons">
+              <li><i class="fab fa-html5"></i><span>HTML5</span></li>
+              <li><i class="fab fa-css3"></i><span>CSS3</span></li>
+              <li><i class="fab fa-js-square"></i><span>Vanilla JavaScript</span></li>
+            </ul>
+            <ul class="project-icons">
+              <li><a class="project-link" href="https://github.com/noopsyjoshi/travel-planner"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <a href="https://boke-webapp.herokuapp.com/" class="btn openProjectBtn">Open Project</a>
+          </div>
+        </div>
+
+
+
+
+Project Link: https://boke-webapp.herokuapp.com/
+GitHub Link: https://github.com/noopsyjoshi/wdi-project-4
+
+      </div>
+    </section>
+
+    <!-- Journey -->
+    <section class="journey" id="journey">
+      <div class="container">
+        <h2>My Journey</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact text-center">
+      <h2>Get In Touch</h2>
+      <a class="email" href="mailto:noopur.joshi13@gmail.com"><strong>noopur.joshi13@gmail.com</strong></a>
+      <div class="col-sm-12 text-center">
+        <ul class="social-icons">
+          <li><a href="" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="" target="_blank"><i class="fab fa-github"></i></a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-100 footer text-center" id="footer">
+      <p class="copyright">© Copright 2018 Noopur Joshi - All Rights Reserved</p>
     </div>
-  </section>
+  </footer>
 
-  <!-- Skills -->
-  <section class="skills" id="skills">
-    <h2>These are my skills</h2>
-    <div class="col-sm-12 text-center">
-      <ul class="skills-icons">
-        <li><i class="fab fa-react"></i></li>
-        <li><i class="fab fa-angular"></i></li>
-        <li><i class="fab fa-js-square"></i></li>
-        <li><i class="fab fa-html5"></i></li>
-        <li><i class="fab fa-css3-alt"></i></li>
-        <li><i class="fab fa-node-js"></i></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section class="projects" id="projects">
-    <h2>These are my projects</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-  </section>
-
-  <!-- Journey -->
-  <section class="journey" id="journey">
-    <h2>My Journey</h2>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="contact text-center">
-    <h2>Get In Touch</h2>
-    <a href="mailto:noopur.joshi13@gmail.com"><strong>noopur.joshi13@gmail.com</strong></a>
-    <div class="col-sm-12 text-center">
-      <ul class="social-icons">
-        <li><a href="" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
-        <li><a href="" target="_blank"><i class="fab fa-github"></i></a></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="w-100 footer text-center" id="footer">
-    <p class="sub">© Copright 2018 Noopur Joshi - All Rights Reserved</p>
-  </div>
-</footer>
+  <script>
+  ScrollReveal().reveal('.navbar, h1, .about-left, .about-right', { duration: 2000 });
+  ScrollReveal().reveal('.homeBtn, .skills-icons', { duration: 2000, delay: 1000 });
+  ScrollReveal().reveal('.project-row-1', { duration: 2000 });
+  ScrollReveal().reveal('.project-row-2', { duration: 2000, delay: 500 });
+  ScrollReveal().reveal('.project-row-3', { duration: 2000, delay: 500 });
+  ScrollReveal().reveal('.project-row-4', { duration: 2000, delay: 500 });
+  ScrollReveal().reveal('.journey', { duration: 2000, delay: 1000 });
+</script>
 
 
+
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

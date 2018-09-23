@@ -5,10 +5,11 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
+  color: #2d2d2d;
 }
 
 a {
-  color: black;
+  color: #2d2d2d;
 }
 
 /* Typography */
@@ -22,8 +23,7 @@ h1 {
 h2 {
   text-align: center;
   font-weight: 200;
-  padding: 20px 0 20px 0;
-  color: white;
+  padding: 80px 0 40px 0;
 }
 
 h3 {
@@ -34,10 +34,14 @@ h4 {
 
 }
 
+p {
+  font-size: 1rem;
+}
+
 /* Navbar */
 
 .navbar {
-  color: black;
+  color: #2d2d2d;
   background-color: white;
 }
 
@@ -46,10 +50,35 @@ h4 {
 .home {
   padding: 0;
   background-color: #220547;
-  height: 80vh;
+  height: 100vh;
   align-items: center;
   justify-content: center;
   display: flex;
+  animation: bgcolor infinite 10s;
+  transition: 10s;
+}
+
+@keyframes bgcolor {
+  0% {
+    background-color: #220547;
+  }
+
+  25% {
+    background-color: #090949;
+  }
+
+  50% {
+    background-color: #061A46;
+  }
+
+  75% {
+    background-color: #090949;
+  }
+
+  100% {
+    background-color: #220547;
+  }
+
 }
 
 .homeBtn {
@@ -76,13 +105,13 @@ h4 {
 /* About section */
 
 .about {
-  height: 100vh;
+  /* height: 100vh; */
+  /* background: linear-gradient(#f4f4f4, #e2e2e2); */
+  background-color: #f8f9fa;
 }
 
 .profile-picture {
-  width: 250px;
-  height: 300px;
-  border-radius: 100%;
+  width: 300px;
 }
 
 /* Skills section */
@@ -114,6 +143,71 @@ h4 {
 
 }
 
+.project {
+  width: 500px;
+  height: 500px;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.openProjectBtn {
+  background-color: transparent;
+  border: 2px solid #ff9d00;
+  color: #ff9d00;
+  width: 200px;
+  padding: 10px;
+}
+
+.openProjectBtn:hover {
+  background-color: #ff9d00;
+  color: white;
+  transition: 0.3s;
+}
+
+.project-row {
+  margin: 20px 0 40px 0;
+}
+
+.technology-icons, .project-icons {
+  list-style: none;
+  overflow: hidden;
+  padding: 5px;
+}
+
+.technology-icons li {
+  float: left;
+  padding: 20px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.project-icons li {
+  float: left;
+  padding: 0px;
+}
+
+.project-icons li a {
+  font-size: 1rem;
+  color: #fff;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.project-icons li a:hover {
+  opacity: 1;
+}
+
+.project-1 {
+  background-image: url('../images/spaceinvaders.png');
+  background-size: cover;
+}
+
+.project-4 {
+  background-image: url('../images/boke.png');
+  background-size: cover;
+}
+
 .journey {
   background-color: #f8f9fa;
   padding: 60px 0 60px 0;
@@ -121,7 +215,6 @@ h4 {
 
 .contact {
   padding-top: 40px;
-  padding-bottom: 40px;
   background-color: #220547;
   color: white;
 }
@@ -141,7 +234,7 @@ h4 {
 .social-icons li a {
   font-size: 40px;
   color: #fff;
-  opacity: 0.4;
+  opacity: 0.5;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   transition: all .3s ease;
@@ -151,14 +244,23 @@ h4 {
   opacity: 1;
 }
 
+.email {
+  font-size: 1rem;
+  color: white;
+  font-weight: 300;
+}
+
 /* Footer */
 footer {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   background-color: #220547;
 }
 
 footer p {
-  opacity: 0.4;
+  opacity: 0.5;
   color: white;
+}
+
+.copyright {
+  font-size: 0.7rem;
 }
