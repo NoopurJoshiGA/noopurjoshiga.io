@@ -35,7 +35,7 @@ h4 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 /* Navbar */
@@ -96,7 +96,7 @@ p {
   transition: 0.3s;
 }
 
-.typed-cursor.typed-cursor--blink {
+.typed-cursor, .typed-cursor--blink {
   color: white;
 }
 
@@ -131,12 +131,41 @@ p {
 .skills-icons li {
   float: left;
   padding: 20px;
+  margin-top: 20px;
+  font-size: 0.7rem;
+    width: 110px;
+    height: 100px;
 }
 
 .skills-icons li i {
   font-size: 40px;
 }
 
+.card {
+  margin: 5px;
+}
+
+.devicon-express-original,
+.devicon-mongodb-plain,
+.devicon-bootstrap-plain,
+.devicon-sass-original,
+.devicon-jquery-plain-wordmark,
+.devicon-mysql-plain,
+.devicon-github-plain,
+.devicon-atom-original,
+.devicon-slack-plain,
+.devicon-confluence-plain
+ {
+  color: #220547;
+}
+
+.fab {
+  color: #220547;
+}
+
+span {
+  margin-top: 6px;
+}
 
 /* Projects section */
 .projects {
