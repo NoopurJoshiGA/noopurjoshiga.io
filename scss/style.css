@@ -10,6 +10,12 @@ body {
 
 a {
   color: #2d2d2d;
+  transition: 0.3s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ff9d00;
 }
 
 /* Typography */
@@ -31,7 +37,9 @@ h2 {
 }
 
 h3 {
-
+  font-size: 1rem;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 h4 {
@@ -59,32 +67,32 @@ p {
   align-items: center;
   justify-content: center;
   display: flex;
-  animation: bgcolor infinite 10s;
-  transition: 10s;
+  /* animation: bgcolor infinite 10s; */
+  /* transition: 10s; */
 }
 
-@keyframes bgcolor {
-  0% {
-    background-color: #220547;
-  }
-
-  25% {
-    background-color: #090949;
-  }
-
-  50% {
-    background-color: #061A46;
-  }
-
-  75% {
-    background-color: #090949;
-  }
-
-  100% {
-    background-color: #220547;
-  }
-
+/* @keyframes bgcolor {
+0% {
+background-color: #220547;
 }
+
+25% {
+background-color: #090949;
+}
+
+50% {
+background-color: #061A46;
+}
+
+75% {
+background-color: #090949;
+}
+
+100% {
+background-color: #220547;
+}
+
+} */
 
 .homeBtn {
   background-color: transparent;
@@ -133,6 +141,14 @@ p {
   padding: 0px;
 }
 
+.bulma {
+  background-image: url(../images/bulma.png);
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  margin: 0 auto;
+}
+
 .skills-icons li {
   float: left;
   padding: 20px;
@@ -178,8 +194,13 @@ span {
 
 }
 
+.project-row {
+  margin: 20px 0 50px 0;
+}
+
 .project {
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   height: 500px;
   text-align: left;
   padding-left: 30px;
@@ -187,10 +208,11 @@ span {
 
 .openProjectBtn {
   background-color: transparent;
-  border: 2px solid #ff9d00;
+  border: 1px solid #ff9d00;
   color: #ff9d00;
-  width: 180px;
+  width: 150px;
   padding: 5px;
+  font-size: 0.8rem;
 }
 
 .openProjectBtn .fab {
@@ -219,20 +241,18 @@ span {
   transition: 0.3s;
 }
 
-.project-row {
-  margin: 20px 0 40px 0;
-}
 
 .technology-icons, .project-icons {
-  list-style: inline-block;
+  /* list-style: inline-block; */
+  list-style: none;
   overflow: hidden;
-  padding: 5px;
+  padding: 2px;
 }
 
 .technology-icons li {
   float: left;
-  padding: 20px;
-  font-size: 1rem;
+  padding: 5px;
+  /* font-size: 1rem; */
   color: #fff;
 }
 
@@ -254,22 +274,34 @@ span {
 }
 
 .project-1 {
-  background-image: url('../images/spaceinvaders.png');
+  background-image: url('../images/spaceinvaderss.png');
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
   background-size: cover;
 }
 
 .project-2 {
-  background-image: url('../images/instagramclone.png');
+  background-image: url('../images/instagramm.png');
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
   background-size: cover;
 }
 
 .project-3 {
-  background-image: url('../images/traverse.png');
+  background-image: url('../images/traversee.png');
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
   background-size: cover;
 }
 
 .project-4 {
-  background-image: url('../images/boke.png');
+  background-image: url('../images/bokee.png');
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
   background-size: cover;
 }
 
@@ -393,8 +425,6 @@ Media Queries
 
   .skills-icons li {
     float: left;
-    /* padding: 10px; */
-    /* margin-top: 20px; */
     font-size: 0.6rem;
     width: 100px;
     height: 100px;
@@ -457,4 +487,12 @@ Media Queries
     width: 100%;
     height: 300px;
   }
+
+  .project-1 {
+    background-image: url('../images/spaceinvaders.png');
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+  }
+}
 }

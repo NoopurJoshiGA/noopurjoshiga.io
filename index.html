@@ -78,7 +78,6 @@
           <div class="about-right">
             <p>I enrolled in General Assembly’s Web Development Immersive course in June 2018 to help develop my skills further and dive deeper into programming.
             My time at General Assembly taught me that perseverance, curiosity and a logical approach to problem solving is key to becoming a Web Developer.</p>
-            <p><strong>I’m looking for opportunities to work as a Full Stack Developer where I can translate my education and experience into an agile and creative workplace.</strong></p>
           </div>
         </div>
       </div>
@@ -97,7 +96,7 @@
           <li class="card"><i class="fab fa-angular"></i><span>AngularJS</span></li>
           <li class="card"><i class="devicon-express-original"></i><span>ExpressJS</span></li>
           <li class="card"><i class="devicon-mongodb-plain"></i><span>MongoDB</span></li>
-          <li class="card"><i class=""></i><span>Bulma</span></li>
+          <li class="card"><i class="bulma"></i><span>Bulma</span></li>
           <li class="card"><i class="devicon-bootstrap-plain"></i><span>Bootstrap</span></li>
           <li class="card"><i class="devicon-sass-original"></i><span>SASS</span></li>
           <li class="card"><i class="devicon-jquery-plain-wordmark"></i><span>jQuery</span></li>
@@ -119,7 +118,7 @@
 
         <!-- Project 4 - Boke -->
         <div class="row project-row-1 project-row">
-          <div class="project-4 project col-sm-6 bg-dark"></div>
+          <div class="project-4 col-sm-6"></div>
           <div class="project col-sm-6">
             <p>'Boke' is full-stack application developed which serves as a networking platform, allowing users to register as either a photographer or a model, search and filter users based on their location, upload and comment on images.</p>
             <p>
@@ -133,7 +132,7 @@
               <li><i class="fab fa-css3"></i></li>
               <li><i class="fab fa-react"></i></li>
               <li><i class="fab fa-node-js"></i></li>
-              <li><i class="devicon-express-original"></i><</li>
+              <li><i class="devicon-express-original"></i></li>
               <li><i class="devicon-mongodb-plain"></i></li>
             </ul>
             <a href="https://boke-webapp.herokuapp.com/" class="btn openProjectBtn"><i class="fas fa-link"></i>Open Project</a>
@@ -143,7 +142,7 @@
 
         <!-- Project 3 - Traverse -->
         <div class="row project-row project-row-2">
-          <div class="project-3 project col-sm-6 bg-dark">
+          <div class="project-3 col-sm-6">
           </div>
           <div class="project col-sm-6">
             <p>I worked in a pair to create a MEAN full stack application which automates a users travel itinerary based on the location, duration, type of accommodation and user selected activities.
@@ -169,7 +168,7 @@
 
         <!-- Project 2 - Instagram Clone -->
         <div class="row project-row project-row-3">
-          <div class="project-2 project col-sm-6 bg-dark">
+          <div class="project-2 col-sm-6">
           </div>
           <div class="project col-sm-6">
             <p>Developed a full-stack, RESTful application which allows users to create, edit, delete posts and comments (Instagram clone). The application includes a Mongo database, EJS template for the front-end, authentication and Bulma CSS framework for styling.</p>
@@ -189,7 +188,7 @@
 
         <!-- Project 1 - Space Invaders -->
         <div class="row project-row project-row-4">
-          <div class="project-1 project col-sm-6 bg-dark">
+          <div class="project-1 col-sm-6">
           </div>
           <div class="project col-sm-6">
             <p>Developed a Star Wars version of the classic arcade game, Space Invaders, using Vanilla Javascript, HTML and CSS.
@@ -236,19 +235,25 @@
 
     <!-- Footer -->
     <footer class="w-100 footer text-center" id="footer">
-      <p class="copyright">© Copright 2018 Noopur Joshi - All Rights Reserved</p>
+      <p class="copyright text-center">© Copright 2018 Noopur Joshi - All Rights Reserved</p>
     </div>
   </footer>
 
   <script>
-  ScrollReveal().reveal('.navbar, h1, .about-left, .about-right', { duration: 2000 });
-  ScrollReveal().reveal('h2', { duration: 2000, delay: 500 });
-  ScrollReveal().reveal('.homeBtn, .skills-icons', { duration: 2000, delay: 1500 });
-  ScrollReveal().reveal('.project-row-1', { duration: 2000 });
-  ScrollReveal().reveal('.project-row-2', { duration: 2000, delay: 500 });
-  ScrollReveal().reveal('.project-row-3', { duration: 2000, delay: 500 });
-  ScrollReveal().reveal('.project-row-4', { duration: 2000, delay: 500 });
-  ScrollReveal().reveal('.journey', { duration: 2000, delay: 1000 });
+  ScrollReveal().reveal('.navbar, h1', { duration: 2000 });
+  ScrollReveal().reveal('.homeBtn, h3, .project', { duration: 1000, delay: 700 });
+  ScrollReveal().reveal('h2', { duration: 1000 });
+  ScrollReveal().reveal('.about-left, .about-right', { duration: 1000, delay: 1000 });
+  ScrollReveal().reveal('.skills-icons', { duration: 1000, delay: 1500 });
+  ScrollReveal().reveal('.project-4, .project-3, .project-2, .project-1', {   duration: 1500, origin:'left', distance:'200px', viewFactor: 0.2 });
+
+
+  // ScrollReveal().reveal('.homeBtn, .skills-icons', { duration: 2000, delay: 1500 });
+  // ScrollReveal().reveal('.project-row-1', { duration: 2000 });
+  // ScrollReveal().reveal('.project-row-2', { duration: 2000, delay: 500 });
+  // ScrollReveal().reveal('.project-row-3', { duration: 2000, delay: 500 });
+  // ScrollReveal().reveal('.project-row-4', { duration: 2000, delay: 500 });
+  // ScrollReveal().reveal('.journey', { duration: 2000, delay: 1000 });
 </script>
 
 
