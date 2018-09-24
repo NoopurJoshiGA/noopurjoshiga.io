@@ -39,12 +39,13 @@
   <section class="home text-center w-100 mw-100">
     <div class="container container-fluid" id="home">
       <h1>< Hi, I'm Noopur Joshi /></h1>
+      <!-- <h2 class="home-subtitle">But you can call me, Noops</h2> -->
       <div id="typed-strings">
         <p class"text-white">A Junior Full Stack Web Developer</p>
         <p class"text-white">Nature & Avocado Lover</p>
         <p class"text-white">Jedi</p>
       </div>
-      <h2><span class="text-white" id="typed"></span></h2>
+      <h2 class="typewriter"><span class="text-white" id="typed"></span></h2>
 
       <script>
       let typed = new Typed('#typed',{
@@ -61,12 +62,12 @@
 
   <!-- About me -->
   <section class="about" id="about">
-    <h2>About Me</h2>
     <div class="container">
+      <h2>About Me</h2>
       <!-- TODO: Crop image to be a circle and align it in the middle -->
       <!-- <img class="profile-picture" src="images/Noopur-8.jpg" alt="noopur-profile"/> -->
 
-      <p class=" text-center"><strong>I’m fueled by ramen, matcha, chai, meditation & good code</strong></p>
+      <h3 class="">I’m fueled by ramen, matcha, chai, meditation & good code</h3>
       <div class="row">
         <div class="col-sm text-center">
           <div class="about-left">
@@ -96,7 +97,7 @@
           <li class="card"><i class="fab fa-angular"></i><span>AngularJS</span></li>
           <li class="card"><i class="devicon-express-original"></i><span>ExpressJS</span></li>
           <li class="card"><i class="devicon-mongodb-plain"></i><span>MongoDB</span></li>
-          <li class="card"><i class="fab fa-node-js"></i><span>Bulma</span></li>
+          <li class="card"><i class=""></i><span>Bulma</span></li>
           <li class="card"><i class="devicon-bootstrap-plain"></i><span>Bootstrap</span></li>
           <li class="card"><i class="devicon-sass-original"></i><span>SASS</span></li>
           <li class="card"><i class="devicon-jquery-plain-wordmark"></i><span>jQuery</span></li>
@@ -113,102 +114,99 @@
 
     <!-- Projects -->
     <section class="projects" id="projects">
-      <h2>My Work</h2>
       <div class="container text-center">
+        <h2>My Work</h2>
 
+        <!-- Project 4 - Boke -->
         <div class="row project-row-1 project-row">
-          <div class="project-4 project col-sm-6 bg-dark">
-          </div>
+          <div class="project-4 project col-sm-6 bg-dark"></div>
           <div class="project col-sm-6">
-            <p>'Boke' is full-stack application developed using Express JS and Mongo database for the back-end; ReactJS, HTML, CSS for the front-end.
-              The application serves as a networking platform, allowing users to register as either a photographer or a model, search and filter users based on their location, upload and comment on images.
-            </p>
+            <p>'Boke' is full-stack application developed which serves as a networking platform, allowing users to register as either a photographer or a model, search and filter users based on their location, upload and comment on images.</p>
             <p>
               I used Trello to formulate a plan and note down user stories and Sketch to create wireframes.
               I used a mobile-first approach to develop the application, and later ensured that it was fully responsive on tablet and desktop.
               Additionally, I used three external API’s - Postcodes.io, FileStack and Leaflet.
             </p>
             <p>This project was built as my final project for General Assembly's Web Immersive Programme.</p>
-            <!-- <h4>Technologies</h4> -->
-            <!-- <ul class="technology-icons">
-              <li><i class="fab fa-html5"></i><span>HTML5</span></li>
-              <li><i class="fab fa-css3"></i><span>CSS3</span></li>
-              <li><i class="fab fa-js-square"></i><span>Vanilla JavaScript</span></li>
-            </ul> -->
-            <ul class="project-icons">
-              <li><a class="project-link" href="https://github.com/noopsyjoshi/wdi-project-4"><i class="fab fa-github"></i></a></li>
+            <ul class="technology-icons">
+              <li><i class="fab fa-html5"></i></li>
+              <li><i class="fab fa-css3"></i></li>
+              <li><i class="fab fa-react"></i></li>
+              <li><i class="fab fa-node-js"></i></li>
+              <li><i class="devicon-express-original"></i><</li>
+              <li><i class="devicon-mongodb-plain"></i></li>
             </ul>
-            <a href="https://boke-webapp.herokuapp.com/" class="btn openProjectBtn">Open Project</a>
+            <a href="https://boke-webapp.herokuapp.com/" class="btn openProjectBtn"><i class="fas fa-link"></i>Open Project</a>
+            <a href="https://github.com/noopsyjoshi/wdi-project-4" class="btn openProjectBtn"><i class="fab fa-github"></i>View on GitHub</a>
           </div>
         </div>
 
-
+        <!-- Project 3 - Traverse -->
         <div class="row project-row project-row-2">
-          <div class="project-1 project col-sm-6 bg-dark">
-          </div>
-          <div class="project col-sm-6">
-            <p>Developed a Star Wars version of the classic arcade game, Space Invaders, using Vanilla Javascript, HTML and CSS. Designed as a one player game where you can move the spaceship left and right, and shoot at the enemies by pressing the spacebar. Defeat the Death Star and you beat the game.</p>
-            <p>This game was built as my first project for General Assembly's Web Immersive Programme.</p>
-            <h4>Technologies</h4>
-            <ul class="technology-icons">
-              <li><i class="fab fa-html5"></i><span>HTML5</span></li>
-              <li><i class="fab fa-css3"></i><span>CSS3</span></li>
-              <li><i class="fab fa-js-square"></i><span>Vanilla JavaScript</span></li>
-            </ul>
-            <ul class="project-icons">
-              <li><a class="project-link" href="https://github.com/noopsyjoshi/wdi-project-one/"><i class="fab fa-github"></i></a></li>
-            </ul>
-            <a href="https://boke-webapp.herokuapp.com/" class="btn openProjectBtn">Open Project</a>
-          </div>
-        </div>
-
-        <div class="row project-row project-row-3">
-          <div class="project-2 project col-sm-6 bg-dark">
-          </div>
-          <div class="project col-sm-6 bg-info">
-            <p>Developed a full-stack, RESTful application which allows users to create, edit, delete posts and comments (Instagram clone). The application includes a Mongo database, EJS template for the front-end, authentication and Bulma CSS framework for styling.</p>
-            <p>This game was built as my second project for General Assembly's Web Immersive Programme.</p>
-            <h4>Technologies</h4>
-            <ul class="technology-icons">
-              <li><i class="fab fa-html5"></i><span>HTML5</span></li>
-              <li><i class="fab fa-css3"></i><span>CSS3</span></li>
-              <li><i class="fab fa-js-square"></i><span>Vanilla JavaScript</span></li>
-            </ul>
-            <ul class="project-icons">
-              <li><a class="project-link" href="https://github.com/noopsyjoshi/wdi-project-two"><i class="fab fa-github"></i></a></li>
-            </ul>
-            <a href="https://boke-webapp.herokuapp.com/" class="btn openProjectBtn">Open Project</a>
-          </div>
-        </div>
-
-        <div class="row project-row project-row-4">
           <div class="project-3 project col-sm-6 bg-dark">
           </div>
-          <div class="project col-sm-6 bg-info">
+          <div class="project col-sm-6">
             <p>I worked in a pair to create a MEAN full stack application which automates a users travel itinerary based on the location, duration, type of accommodation and user selected activities.
-              I worked alongside my teammate to construct a project timeline (we were given a week), write and prioritise thoughtful user stories on Trello, and closely collaborate to manage the GitHub branches, conflicts and merges in our code.
+              I worked alongside my teammate to construct a project timeline, write thoughtful user stories on Trello, and closely collaborate to manage the GitHub branches, conflicts and merges in our code.
+            </p>
+            <p>
               The application is created using a Mongo database, NodeJS, ExpressJS and AngularJS.
               The project is styled with Bulma CSS framework, includes authentication and automated tests built with Mocha and Chai.
             </p>
             <p>This game was built as my third project for General Assembly's Web Immersive Programme.</p>
-            <h4>Technologies</h4>
+            <ul class="technology-icons">
+              <li><i class="fab fa-html5"></i></li>
+              <li><i class="fab fa-css3"></i></li>
+              <li><i class="fab fa-angular"></i></li>
+              <li><i class="fab fa-node-js"></i></li>
+              <li><i class="devicon-express-original"></i></li>
+              <li><i class="devicon-mongodb-plain"></i></li>
+            </ul>
+            <a href="https://automated-travel-app.herokuapp.com" class="btn openProjectBtn"><i class="fas fa-link"></i>Open Project</a>
+            <a href="https://github.com/noopsyjoshi/travel-planner" class="btn openProjectBtn"><i class="fab fa-github"></i>View on GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project 2 - Instagram Clone -->
+        <div class="row project-row project-row-3">
+          <div class="project-2 project col-sm-6 bg-dark">
+          </div>
+          <div class="project col-sm-6">
+            <p>Developed a full-stack, RESTful application which allows users to create, edit, delete posts and comments (Instagram clone). The application includes a Mongo database, EJS template for the front-end, authentication and Bulma CSS framework for styling.</p>
+            <p>This game was built as my second project for General Assembly's Web Immersive Programme.</p>
+            <ul class="technology-icons">
+              <li><i class="fab fa-html5"></i></li>
+              <li><i class="fab fa-css3"></i></li>
+              <li><i class="fab fa-node-js"></i></li>
+              <li><i class="devicon-express-original"></i></li>
+              <li><i class="devicon-mongodb-plain"></i></li>
+            </ul>
+            <a href="https://noops-instagram.herokuapp.com/" class="btn openProjectBtn"><i class="fas fa-link"></i>Open Project</a>
+            <a href="https://github.com/noopsyjoshi/wdi-project-two" class="btn openProjectBtn"><i class="fab fa-github"></i>View on GitHub</a>
+          </div>
+        </div>
+
+
+        <!-- Project 1 - Space Invaders -->
+        <div class="row project-row project-row-4">
+          <div class="project-1 project col-sm-6 bg-dark">
+          </div>
+          <div class="project col-sm-6">
+            <p>Developed a Star Wars version of the classic arcade game, Space Invaders, using Vanilla Javascript, HTML and CSS.
+              Designed as a one player game where you can move the spaceship left and right, and shoot at the enemies by pressing the spacebar.
+              Defeat the Death Star and you beat the game.</p>
+            <p>This game was built as my first project for General Assembly's Web Immersive Programme.</p>
             <ul class="technology-icons">
               <li><i class="fab fa-html5"></i><span>HTML5</span></li>
               <li><i class="fab fa-css3"></i><span>CSS3</span></li>
               <li><i class="fab fa-js-square"></i><span>Vanilla JavaScript</span></li>
             </ul>
-            <ul class="project-icons">
-              <li><a class="project-link" href="https://github.com/noopsyjoshi/travel-planner"><i class="fab fa-github"></i></a></li>
-            </ul>
-            <a href="https://boke-webapp.herokuapp.com/" class="btn openProjectBtn">Open Project</a>
+            <a href="https://noopsyjoshi.github.io/wdi-project-one/" class="btn openProjectBtn"><i class="fas fa-link"></i>Open Project</a>
+            <a href="https://github.com/noopsyjoshi/wdi-project-one" class="btn openProjectBtn"><i class="fab fa-github"></i>View on GitHub</a>
           </div>
         </div>
 
 
-
-
-Project Link: https://boke-webapp.herokuapp.com/
-GitHub Link: https://github.com/noopsyjoshi/wdi-project-4
 
       </div>
     </section>
@@ -230,8 +228,8 @@ GitHub Link: https://github.com/noopsyjoshi/wdi-project-4
       <div class="col-sm-12 text-center">
         <ul class="social-icons">
           <li><a href="" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.instagram.com/chameleononarainbow/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="https://github.com/noopsyjoshi" target="_blank"><i class="fab fa-github"></i></a></li>
         </ul>
       </div>
     </section>
@@ -244,7 +242,8 @@ GitHub Link: https://github.com/noopsyjoshi/wdi-project-4
 
   <script>
   ScrollReveal().reveal('.navbar, h1, .about-left, .about-right', { duration: 2000 });
-  ScrollReveal().reveal('.homeBtn, .skills-icons', { duration: 2000, delay: 1000 });
+  ScrollReveal().reveal('h2', { duration: 2000, delay: 500 });
+  ScrollReveal().reveal('.homeBtn, .skills-icons', { duration: 2000, delay: 1500 });
   ScrollReveal().reveal('.project-row-1', { duration: 2000 });
   ScrollReveal().reveal('.project-row-2', { duration: 2000, delay: 500 });
   ScrollReveal().reveal('.project-row-3', { duration: 2000, delay: 500 });
