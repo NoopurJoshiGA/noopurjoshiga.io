@@ -169,7 +169,18 @@ ABOUT
 
 .about {
   background-color: #f8f9fa;
+  height: 100vh;
 }
+
+.about-left p {
+  text-align: center;
+}
+
+.about-right p {
+  text-align: center;
+}
+
+
 
 /* .profile-picture {
 width: 300px;
@@ -251,6 +262,18 @@ PROJECTS
 }
 
 .project-row {
+  margin: 20px 0 50px 0;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  align-items: center;
+  justify-content: center;
   margin: 20px 0 50px 0;
 }
 
@@ -605,11 +628,11 @@ Media Queries
 /***************** Custom, iPhone Retina ***************************/
 @media only screen and (max-width : 320px) {
 
-  .home {
-    height: 60vh;
+  .homeBtn {
+    display: none;
   }
 
-  .homeBtn {
+  .fa-angle-double-down {
     display: none;
   }
 
@@ -630,6 +653,14 @@ Media Queries
     font-size: 1.3rem;
   }
 
+  h5 {
+    font-size: 0.9rem;
+  }
+
+  .content p {
+    font-size: 0.7rem;
+  }
+
   .typewriter {
     font-size: 1rem;
     text-align: center;
@@ -641,6 +672,14 @@ Media Queries
     font-size: 0.8rem;
     margin-top: 10px;
     text-align: left !important;
+  }
+
+  .about {
+    height: auto;
+  }
+
+  .row {
+    margin: 20px 0 0px 0;
   }
 
   .skills {
@@ -655,15 +694,15 @@ Media Queries
   .skills-icons li {
     float: left;
     font-size: 0.6rem;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
   }
 
   .project {
     text-align: center;
     padding: 0;
     width: 100%;
-    height: 300px;
+    height: auto;
     margin-bottom: 20px;
   }
 
@@ -675,17 +714,36 @@ Media Queries
   .content {
     text-align: left;
   }
+
+  .openProjectBtn {
+    display: inline;
+  }
+
+  .project-4, .project-3, .project-2, .project-1 {
+    width: 100%;
+    max-width: 320px;
+    height: 180px;
+    background-size: cover;
+  }
+
+  .journey {
+    padding: 0;
+  }
+
+  footer {
+    padding-top: 10px;
+  }
 }
 
 
 @media only screen and (max-width: 480px) and (min-width: 321px) {
 
   .home {
-    height: 90vh;
+    height: 100vh;
   }
 
   h1 {
-    font-size: 4.6rem;
+    font-size: 4rem;
   }
 
   .typewriter {
@@ -698,7 +756,7 @@ Media Queries
   h2 {
     text-align: left;
     font-weight: 700;
-    padding: 80px 0 10px 0;
+    padding: 60px 0 10px 0;
   }
 
   h3 {
@@ -710,6 +768,23 @@ Media Queries
   p {
     font-size: 0.9rem;
     margin-top: 10px;
+  }
+
+  .about {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .about-left p {
+    text-align: left;
+  }
+
+  .about-right p {
+    text-align: left;
+  }
+
+  .row {
+    margin: 20px 0 0px 0;
   }
 
   .skills {
@@ -726,17 +801,11 @@ Media Queries
   }
 
   .project {
-    text-align: left;
-    padding-left: 30px;
+    text-align: center;
+    padding: 0;
     width: 100%;
-    height: 300px;
-  }
-
-  .project-1 {
-    background-image: url('../images/spaceinvaders.png');
-    width: 500px;
-    height: 500px;
-    background-size: cover;
+    height: auto;
+    margin-bottom: 20px;
   }
 
   .right {
@@ -747,4 +816,67 @@ Media Queries
   .content {
     text-align: left;
   }
+
+  .content p {
+    font-size: 0.8rem;
+    text-align: left;
+  }
+
+  .openProjectBtn {
+    display: inline;
+  }
+
+  .project-4, .project-3, .project-2, .project-1 {
+    width: 100%;
+    max-width: 480px;
+    height: 250px;
+    background-size: cover;
+  }
+
+  .journey {
+    padding: 0;
+  }
+
+  footer {
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 481px) and (min-width: 720px) {
+
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    align-items: flex-start;
+    justify-content: center;
+    /* margin: 20px 0 50px 0; */
+}
+
+.project-row {
+    margin: 0px !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 0px !important;
+    height: auto;
+}
+
+  .project-1, .project-2, .project-3, .project-4 {
+    width: 100%;
+    max-width: 500px;
+    height: 350px;
+    background-size: cover;
+  }
+
 }
