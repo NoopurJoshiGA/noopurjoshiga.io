@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link rel="stylesheet" href="scss/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  <link rel="stylesheet" href="scss/style.css">
   <script type="text/javascript" src="js/typed.js" charset="utf-8"></script>
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,12 +17,12 @@
   <!-- TODO: make a logo and align it to the left -->
   <!-- TODO: add responsive burger menu -->
   <nav class="navbar sticky-top navbar-expand-lg">
-    <a class="navbar-brand" href="#">Noopur Joshi</a>
+    <a class="navbar-brand" href="#">< NJ /></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav ml-auto">
         <a class="nav-link nav-item" href="#about">About</a>
         <a class="nav-link nav-item" href="#projects">Projects</a>
         <a class="nav-link nav-item" href="#journey">My Journey</a>
@@ -30,6 +30,11 @@
       </ul>
     </div>
   </nav>
+  <script>
+  $('.nav-link').on('click',function() {
+    $('.navbar-collapse').collapse('hide');
+  });
+  </script>
   <!-- Home -->
   <section class="home text-center w-100 mw-100">
     <div class="container container-fluid" id="home">
@@ -49,7 +54,7 @@
       });
       </script>
       <br>
-      <a href="#about" class="btn homeBtn">See More</a>
+      <a href="#about" class="downArrow"><i class="fas fa-angle-double-down"></i></a>
     </div>
   </section>
   <!-- About me -->
@@ -111,10 +116,8 @@
           <div class="row project-row-1 project-row">
             <div class="project-4 col-sm-6"></div>
             <div class="project col-sm-6">
-              <p>'Boke' is full-stack application developed which serves as a networking platform, allowing users to register as either a photographer or a model, search and filter users based on their location, upload and comment on images.</p>
-              <p>I used Trello to formulate a plan and note down user stories and Sketch to create wireframes.
-                I used a mobile-first approach to develop the application, and later ensured that it was fully responsive on tablet and desktop.
-                Additionally, I used three external API’s - Postcodes.io, FileStack and Leaflet.</p>
+              <p>'Boke' is full-stack application developed which serves as a networking platform, allowing users to register as a photographer or a model, search and filter users based on their location, upload and comment on images.</p>
+              <p>I used Postcodes.io, FileStack API to allow users to upload images from their phone/laptop, and Leaflet to show user locations on a map.</p>
               <p>This project was built as my final project for General Assembly's Web Immersive Programme.</p>
               <ul class="technology-icons">
                 <li><i class="fab fa-html5"></i></li>
@@ -136,150 +139,149 @@
             </div>
             <div class="project col-sm-6">
               <p>I worked in a pair to create a MEAN full stack application which automates a users travel itinerary based on the location, duration, type of accommodation and user selected activities.
-                I worked alongside my teammate to construct a project timeline, write thoughtful user stories on Trello, and closely collaborate to manage the GitHub branches, conflicts and merges in our code.</p>
-              <p>The application is created using a Mongo database, NodeJS, ExpressJS and AngularJS. The project is styled with Bulma CSS framework, includes authentication and automated tests built with Mocha and Chai.</p>
-              <p>This game was built as my third project for General Assembly's Web Immersive Programme.</p>
-              <ul class="technology-icons">
-                <li><i class="fab fa-html5"></i></li>
-                <li><i class="fab fa-css3"></i></li>
-                <li><i class="fab fa-js-square"></i></li>
-                <li><i class="fab fa-angular"></i></li>
-                <li><i class="fab fa-node-js"></i></li>
-                <li><i class="devicon-express-original"></i></li>
-                <li><i class="devicon-mongodb-plain"></i></li>
-              </ul>
-              <a href="https://automated-travel-app.herokuapp.com" target="_blank" class="btn openProjectBtn"><i class="fas fa-link"></i>Open Project</a>
-              <a href="https://github.com/noopsyjoshi/travel-planner" target="_blank" class="btn openProjectBtn"><i class="fab fa-github"></i>View on GitHub</a>
-            </div>
-          </div>
-
-          <!-- Project 2 - Instagram Clone -->
-          <div class="row project-row project-row-3">
-            <div class="project-2 col-sm-6">
-            </div>
-            <div class="project col-sm-6">
-              <p>Developed a full-stack, RESTful application which allows users to create, edit, delete posts and comments (Instagram clone). The application includes a Mongo database, EJS template for the front-end, authentication and Bulma CSS framework for styling.</p>
-              <p>This game was built as my second project for General Assembly's Web Immersive Programme.</p>
-              <ul class="technology-icons">
-                <li><i class="fab fa-html5"></i></li>
-                <li><i class="fab fa-css3"></i></li>
-                <li><i class="fab fa-js-square"></i></li>
-                <li><i class="fab fa-node-js"></i></li>
-                <li><i class="devicon-express-original"></i></li>
-                <li><i class="devicon-mongodb-plain"></i></li>
-              </ul>
-              <a href="https://noops-instagram.herokuapp.com/" target="_blank" class="btn openProjectBtn"><i class="fas fa-link"></i>Open Project</a>
-              <a href="https://github.com/noopsyjoshi/wdi-project-two" target="_blank" class="btn openProjectBtn"><i class="fab fa-github"></i>View on GitHub</a>
-            </div>
-          </div>
-
-
-          <!-- Project 1 - Space Invaders -->
-          <div class="row project-row project-row-4">
-            <div class="project-1 col-sm-6">
-            </div>
-            <div class="project col-sm-6">
-              <p>Developed a Star Wars version of the classic arcade game, Space Invaders, using Vanilla Javascript, HTML and CSS.
-                Designed as a one player game where you can move the spaceship left and right, and shoot at the enemies by pressing the spacebar.
-                Defeat the Death Star and you beat the game.</p>
-                <p>This game was built as my first project for General Assembly's Web Immersive Programme.</p>
+                I worked alongside my teammate to construct a project timeline, write thoughtful user stories on Trello, and closely collaborate to manage GitHub.</p>
+                <p>The project is styled with Bulma CSS framework, includes authentication and automated tests built with Mocha and Chai.</p>
+                <p>This was built as my third project for General Assembly's Web Immersive Programme.</p>
                 <ul class="technology-icons">
-                  <li><i class="fab fa-html5"></i><span>HTML5</span></li>
-                  <li><i class="fab fa-css3"></i><span>CSS3</span></li>
+                  <li><i class="fab fa-html5"></i></li>
+                  <li><i class="fab fa-css3"></i></li>
                   <li><i class="fab fa-js-square"></i></li>
+                  <li><i class="fab fa-angular"></i></li>
+                  <li><i class="fab fa-node-js"></i></li>
+                  <li><i class="devicon-express-original"></i></li>
+                  <li><i class="devicon-mongodb-plain"></i></li>
                 </ul>
-                <a href="https://noopsyjoshi.github.io/wdi-project-one/" target="_blank" class="btn openProjectBtn"><i class="fas fa-link"></i>Open Project</a>
-                <a href="https://github.com/noopsyjoshi/wdi-project-one" target="_blank" class="btn openProjectBtn"><i class="fab fa-github"></i>View on GitHub</a>
+                <a href="https://automated-travel-app.herokuapp.com" target="_blank" class="btn openProjectBtn"><i class="fas fa-link"></i>Open Project</a>
+                <a href="https://github.com/noopsyjoshi/travel-planner" target="_blank" class="btn openProjectBtn"><i class="fab fa-github"></i>View on GitHub</a>
               </div>
             </div>
-          </div>
-        </section>
 
-        <!-- Journey -->
-        <section class="journey" id="journey">
-          <div class="container">
-            <h2>My Journey</h2>
+            <!-- Project 2 - Instagram Clone -->
+            <div class="row project-row project-row-3">
+              <div class="project-2 col-sm-6">
+              </div>
+              <div class="project col-sm-6">
+                <p>Developed a full-stack, RESTful application which allows users to create, edit, delete posts and comments (Instagram clone). The application includes a Mongo database, EJS template for the front-end, authentication and Bulma CSS framework for styling.</p>
+                <p>This was built as my second project for General Assembly's Web Immersive Programme.</p>
+                <ul class="technology-icons">
+                  <li><i class="fab fa-html5"></i></li>
+                  <li><i class="fab fa-css3"></i></li>
+                  <li><i class="fab fa-js-square"></i></li>
+                  <li><i class="fab fa-node-js"></i></li>
+                  <li><i class="devicon-express-original"></i></li>
+                  <li><i class="devicon-mongodb-plain"></i></li>
+                </ul>
+                <a href="https://noops-instagram.herokuapp.com/" target="_blank" class="btn openProjectBtn"><i class="fas fa-link"></i>Open Project</a>
+                <a href="https://github.com/noopsyjoshi/wdi-project-two" target="_blank" class="btn openProjectBtn"><i class="fab fa-github"></i>View on GitHub</a>
+              </div>
+            </div>
 
-            <div class="timeline">
-              <div class="timelineContainer left">
-                <div class="content">
-                  <h4>1993</h4>
-                  <p>I was born!</p>
-                </div>
+
+            <!-- Project 1 - Space Invaders -->
+            <div class="row project-row project-row-4">
+              <div class="project-1 col-sm-6">
               </div>
-              <div class="timelineContainer right">
-                <div class="content">
-                  <h4>2012 - 2015</h4>
-                  <h5>Bsc Computer Science (University of Leicester)</h5>
-                  <p>During the course, I learnt essential computing fundamentals such as operating systems, networks and user interfaces. I gained invaluable insight into all aspects of the software engineering process, from gathering functional requirements, planning, development and testing. The course provided me with logical and practical skills in problem solving, attention to detail and a thorough understanding of the software development process.</p>
-                </div>
-              </div>
-              <div class="timelineContainer left">
-                <div class="content">
-                  <h4>2015 - 2017</h4>
-                  <h5>Implementation Executive (Concep, London)</h5>
-                  <p>Role comprised of onboarding and maintaining global clients onto the company’s core marketing products by providing detailed and thorough technical guidance and support. The role allowed me to be a part of an agile workplace; attending product backlog meetings, daily team stand up meetings, working alongside the Development and Product team to deploy and test new products/features, owning client projects from gathering requirements, integration, testing and maintenance.</p>
-                </div>
-              </div>
-              <div class="timelineContainer right">
-                <div class="content">
-                  <h4>2017 - 2018</h4>
-                  <h5>Implementation Consultant (Confluence, London)</h5>
-                  <p>I worked alongside other consultants to build financial statements and balance sheets for various financial institutions. The role played a huge part in helping me to gain invaluable knowledge of the financial services industry and to showcase great attention to detail whilst comparing investment fund reports. I utilised critical problem solving skills to define and execute solutions for internal and external clients.</p>
-                </div>
-              </div>
-              <div class="timelineContainer left">
-                <div class="content">
-                  <h4>2018 June - Sept</h4>
-                  <h5>Web Development Immersive Programme (General Assembly, London)</h5>
-                  <p>Full time coding bootcamp which helped me to gain proficiency with the latest cutting edge full stack technologies and frameworks. The course consisted of daily classes and tasks, which we had to solve in pairs and regular homework to practice content learnt throughout the day. The course embodies several elements of a professional workplace by encompassing daily standups, use of GitHub, four projects (including a group project) where we had to formulate wireframes, project plans, user stories, develop practical websites and test.
-                  </p>
-                </div>
-              </div>
-              <div class="timelineContainer right">
-                <div class="content">
-                  <h4 class="timeline-text-align">Now</h4>
-                  <p><strong>Seeking opportunities to work as a Full Stack Developer where I can translate my education and experience into an agile and creative workplace.</strong></p>
+              <div class="project col-sm-6">
+                <p>Developed a Star Wars version of the classic arcade game, Space Invaders, using Vanilla Javascript, HTML and CSS.
+                  Designed as a one player game where you can move the spaceship left and right, and shoot at the enemies by pressing the spacebar.
+                  Defeat the Death Star and you beat the game!</p>
+                  <p>This game was built as my first project for General Assembly's Web Immersive Programme.</p>
+                  <ul class="technology-icons">
+                    <li><i class="fab fa-html5"></i><span>HTML5</span></li>
+                    <li><i class="fab fa-css3"></i><span>CSS3</span></li>
+                    <li><i class="fab fa-js-square"></i></li>
+                  </ul>
+                  <a href="https://noopsyjoshi.github.io/wdi-project-one/" target="_blank" class="btn openProjectBtn"><i class="fas fa-link"></i>Open Project</a>
+                  <a href="https://github.com/noopsyjoshi/wdi-project-one" target="_blank" class="btn openProjectBtn"><i class="fab fa-github"></i>View on GitHub</a>
                 </div>
               </div>
             </div>
           </section>
 
-          <!-- Contact -->
-          <section id="contact" class="contact text-center">
-            <h2 class="text-center">Get In Touch</h2>
-            <a class="email" href="mailto:noopur.joshi13@gmail.com"><strong>noopur.joshi13@gmail.com</strong></a>
-            <div class="col-sm-12 text-center">
-              <ul class="social-icons">
-                <li><a href="https://linkedin.com/in/noopurjoshi/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://instagram.com/chameleononarainbow/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://github.com/noopsyjoshi" target="_blank"><i class="fab fa-github"></i></a></li>
-              </ul>
+          <!-- Journey -->
+          <section class="journey" id="journey">
+            <div class="container">
+              <h2>My Journey</h2>
+
+              <div class="timeline">
+                <div class="timelineContainer left">
+                  <div class="content">
+                    <h4>1993</h4>
+                    <p>I was born!</p>
+                  </div>
+                </div>
+                <div class="timelineContainer right">
+                  <div class="content">
+                    <h4>2012 - 2015</h4>
+                    <h5>Bsc Computer Science (University of Leicester)</h5>
+                    <p>During the course, I learnt essential computing fundamentals such as operating systems, networks and user interfaces. I gained invaluable insight into all aspects of the software engineering process, from gathering functional requirements, planning, development and testing. The course provided me with logical and practical skills in problem solving, attention to detail and a thorough understanding of the software development process.</p>
+                  </div>
+                </div>
+                <div class="timelineContainer left">
+                  <div class="content">
+                    <h4>2015 - 2017</h4>
+                    <h5>Implementation Executive (Concep, London)</h5>
+                    <p>Role comprised of onboarding and maintaining global clients onto the company’s core marketing products by providing detailed and thorough technical guidance and support. The role allowed me to be a part of an agile workplace; attending product backlog meetings, daily team stand up meetings, working alongside the Development and Product team to deploy and test new products/features, owning client projects from gathering requirements, integration, testing and maintenance.</p>
+                  </div>
+                </div>
+                <div class="timelineContainer right">
+                  <div class="content">
+                    <h4>2017 - 2018</h4>
+                    <h5>Implementation Consultant (Confluence, London)</h5>
+                    <p>I worked alongside other consultants to build financial statements and balance sheets for various financial institutions. The role played a huge part in helping me to gain invaluable knowledge of the financial services industry and to showcase great attention to detail whilst comparing investment fund reports. I utilised critical problem solving skills to define and execute solutions for internal and external clients.</p>
+                  </div>
+                </div>
+                <div class="timelineContainer left">
+                  <div class="content">
+                    <h4>2018 June - Sept</h4>
+                    <h5>Web Development Immersive Programme (General Assembly, London)</h5>
+                    <p>Intensive 12-week coding bootcamp which helped me to gain proficiency with the latest cutting edge full stack technologies and frameworks.</p>
+                  </div>
+                </div>
+                <div class="timelineContainer right">
+                  <div class="content">
+                    <h4 class="timeline-text-align">Now</h4>
+                    <p><strong>Seeking opportunities to work as a Full Stack Developer where I can translate my education and experience into an agile and creative workplace.</strong></p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" class="contact text-center">
+              <h2 class="text-center">Get In Touch</h2>
+              <a class="email" href="mailto:noopur.joshi13@gmail.com"><strong>noopur.joshi13@gmail.com</strong></a>
+              <div class="col-sm-12 text-center">
+                <ul class="social-icons">
+                  <li><a href="https://linkedin.com/in/noopurjoshi/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                  <li><a href="https://instagram.com/chameleononarainbow/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="https://github.com/noopsyjoshi" target="_blank"><i class="fab fa-github"></i></a></li>
+                </ul>
+              </div>
+            </section>
+
+            <!-- Footer -->
+            <footer class="w-100 footer text-center" id="footer">
+              <p class="copyright text-center">© Copright 2018 Noopur Joshi - All Rights Reserved</p>
             </div>
-          </section>
+          </footer>
 
-          <!-- Footer -->
-          <footer class="w-100 footer text-center" id="footer">
-            <p class="copyright text-center">© Copright 2018 Noopur Joshi - All Rights Reserved</p>
-          </div>
-        </footer>
-
-        <script>
-        ScrollReveal().reveal('.navbar, h1', { duration: 2000 });
-        ScrollReveal().reveal('.homeBtn, h3, .project', { duration: 1000, delay: 700 });
-        ScrollReveal().reveal('h2', { duration: 1000 });
-        ScrollReveal().reveal('.about-left, .about-right', { duration: 1000, delay: 1000 });
-        ScrollReveal().reveal('.skills-icons', { duration: 1000, delay: 1500 });
-        ScrollReveal().reveal('.project-4, .project-3, .project-2, .project-1', {   duration: 1500, origin:'left', distance:'200px', viewFactor: 0.2 });
-        ScrollReveal().reveal('.content', {   duration: 1000, origin:'bottom', distance:'100px', delay: 200 });
-        </script>
+          <script>
+          ScrollReveal().reveal('h1', { duration: 2000 });
+          ScrollReveal().reveal('.downArrow, h3, .project', { duration: 1000, delay: 700 });
+          ScrollReveal().reveal('h2', { duration: 1000 });
+          ScrollReveal().reveal('.about-left, .about-right', { duration: 1000, delay: 1000 });
+          ScrollReveal().reveal('.skills-icons', { duration: 1000, delay: 1500 });
+          ScrollReveal().reveal('.project-4, .project-3, .project-2, .project-1', {   duration: 1500, origin:'left', distance:'200px', viewFactor: 0.2 });
+          ScrollReveal().reveal('.content', {   duration: 1000, origin:'bottom', distance:'100px', delay: 200 });
+          </script>
 
 
 
-        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+          <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-      </body>
-      </html>
+        </body>
+        </html>
