@@ -213,7 +213,7 @@ SKILLS (same page as about)
 }
 
 .skills-icons li i {
-  font-size: 40px;
+  font-size: 2rem;
 }
 
 .card {
@@ -271,29 +271,32 @@ PROJECTS
   font-size: 0.8rem;
 }
 
+.openProjectBtn:hover {
+  background-color: #ff9d00;
+  color: white;
+  transition: 0.3s;
+}
+
+.openProjectBtn:hover .fab {
+  color: white !important;
+  padding: 0 10px 0 0;
+}
+
+.openProjectBtn:hover .fas {
+  color: white !important;
+  padding: 0 10px 0 0;
+}
+
+
 .openProjectBtn .fab {
   color: #ff9d00 !important;
   padding: 0 10px 0 0;
+  transition: 0.3s;
 }
 
 .openProjectBtn .fas {
   color: #ff9d00 !important;
   padding: 0 10px 0 0;
-}
-
-.openProjectBtn .fab:hover {
-  color: white !important;
-  padding: 0 10px 0 0;
-}
-
-.openProjectBtn .fas:hover {
-  color: white !important;
-  padding: 0 10px 0 0;
-}
-
-.openProjectBtn:hover {
-  background-color: #ff9d00;
-  color: white;
   transition: 0.3s;
 }
 
@@ -306,7 +309,7 @@ PROJECTS
 .technology-icons li {
   float: left;
   padding: 5px;
-  /* font-size: 1rem; */
+  font-size: 1.3rem;
   color: #fff;
 }
 
