@@ -66,35 +66,14 @@ NAVBAR
 
 nav {
   background-color: white;
-  height: 50px;
-}
-
-.navbar {
-  color: #2d2d2d;
-}
-
-.navbar-container {
-
 }
 
 .navbar-brand {
-  display: inline-block;
-  padding-top: .3125rem;
-  padding-bottom: .3125rem;
-  margin-right: 1rem;
   font-size: 1rem;
-  line-height: inherit;
-  white-space: nowrap;
   font-weight: 700;
 }
 
 .navbar-nav {
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
   text-align: right;
   text-transform: uppercase;
   font-weight: 700;
@@ -115,38 +94,11 @@ HOME
 
 .home {
   height: 100vh;
-  margin: 0;
-  padding: 0;
   background-color: #220547;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* animation: bgcolor infinite 10s; */
-  /* transition: 10s; */
 }
-
-/* @keyframes bgcolor {
-0% {
-background-color: #220547;
-}
-
-25% {
-background-color: #090949;
-}
-
-50% {
-background-color: #061A46;
-}
-
-75% {
-background-color: #090949;
-}
-
-100% {
-background-color: #220547;
-}
-
-} */
 
 .downArrow {
   color: #ff9d00;
@@ -180,20 +132,16 @@ ABOUT
   text-align: center;
 }
 
-
-
 /* .profile-picture {
-width: 300px;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  border-radius: 50%;
 } */
 
 /* =============================================================================
 SKILLS (same page as about)
 ========================================================================== */
-
-.skills {
-  background-color: #f8f9fa;
-  padding: 60px 0 60px 0;
-}
 
 .skills-icons {
   padding: 0px;
@@ -258,24 +206,14 @@ span {
 PROJECTS
 ========================================================================== */
 .projects {
-
+  height: auto;
+  padding-bottom: 20px;
 }
 
 .project-row {
   margin: 20px 0 50px 0;
 }
 
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-  align-items: center;
-  justify-content: center;
-  margin: 20px 0 50px 0;
-}
 
 .project {
   max-width: 500px;
@@ -678,10 +616,6 @@ Media Queries
     height: auto;
   }
 
-  .row {
-    margin: 20px 0 0px 0;
-  }
-
   .skills {
     background-color: #f8f9fa;
     padding: 0px;
@@ -783,10 +717,6 @@ Media Queries
     text-align: left;
   }
 
-  .row {
-    margin: 20px 0 0px 0;
-  }
-
   .skills {
     padding: 10px 0 10px 0;
   }
@@ -807,6 +737,11 @@ Media Queries
     height: auto;
     margin-bottom: 20px;
   }
+
+  .project-buttons {
+    display: flex;
+    justify-content: space-between;
+}
 
   .right {
     left: 0%;
@@ -847,22 +782,45 @@ Media Queries
 
 }
 
-
+/* TABLET */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
 
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .about {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
   .row {
+    /* display: flex;
     display: -ms-flexbox;
-    display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
     align-items: flex-start;
-    justify-content: center;
-    /* margin: 20px 0 50px 0; */
-}
+    justify-content: center; */
+    margin-bottom: 0px;
+  }
 
-.project-row {
+  .skills-icons li {
+    margin-top: 20px;
+    font-size: 0.7rem;
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .project {
+    padding-bottom: 50px;
+    height: auto;
+  }
+
+  .project-row {
     margin: 0px !important;
     display: flex !important;
     flex-direction: column;
@@ -870,7 +828,7 @@ Media Queries
     align-items: center !important;
     padding: 0px !important;
     height: auto;
-}
+  }
 
   .project-1, .project-2, .project-3, .project-4 {
     width: 100%;
