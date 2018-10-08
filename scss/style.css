@@ -17,7 +17,7 @@ body {
 
 h1 {
   padding: 20px;
-  color: white;
+  color: #ff9d00;
   font-size: 4rem;
   font-weight: 700;
 }
@@ -111,7 +111,15 @@ HOME
 }
 
 .typed-cursor, .typed-cursor--blink {
-  color: white;
+  color: #ff9d00;
+}
+
+.typewriter {
+  color: #ff9d00 !important;
+  font-family: "Courier New" !important;
+  text-align: center;
+  font-weight: 500;
+  /* padding: 10px 0 10px 0; */
 }
 
 
@@ -598,6 +606,8 @@ Media Queries
   }
 
   .typewriter {
+    color: #ff9d00 !important;
+    font-family: "Courier New" !important;
     font-size: 1rem;
     text-align: center;
     font-weight: 200;
