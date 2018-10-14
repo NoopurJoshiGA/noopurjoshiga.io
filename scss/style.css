@@ -341,7 +341,7 @@ JOURNEY
 .contact {
   padding-top: 40px;
   background-color: #220547;
-  color: white;
+  color: #ff9d00;
 }
 
 .social-icons {
@@ -380,7 +380,7 @@ JOURNEY
 
 .email {
   font-size: 1rem;
-  color: white;
+  color: #ff9d00;
   font-weight: 300;
 }
 
@@ -520,6 +520,7 @@ footer p {
 
 .copyright {
   font-size: 0.7rem;
+  color: #ff9d00;
 }
 
 /* =============================================================================
