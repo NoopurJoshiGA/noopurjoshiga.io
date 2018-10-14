@@ -18,8 +18,14 @@ body {
 h1 {
   padding: 20px;
   color: #ff9d00;
-  font-size: 4rem;
+  font-size: 8rem;
   font-weight: 700;
+}
+
+.home-title {
+  color: #ff9d00;
+  padding: 0px;
+  font-size: 1.6rem;
 }
 
 h2 {
@@ -591,6 +597,13 @@ Media Queries
     padding: 40px 0 10px 0;
   }
 
+  .home-title {
+    text-align: center;
+    color: #ff9d00;
+    padding: 0px;
+    font-size: 1rem;
+  }
+
   h3 {
     padding: 0;
     text-align: left;
@@ -700,6 +713,13 @@ Media Queries
     text-align: left;
     font-weight: 700;
     padding: 60px 0 10px 0;
+  }
+
+  .home-title {
+    text-align: center;
+    color: #ff9d00;
+    padding: 0px;
+    font-size: 1rem;
   }
 
   h3 {
