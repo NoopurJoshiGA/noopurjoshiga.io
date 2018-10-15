@@ -818,6 +818,10 @@ Media Queries
     font-size: 1.4rem;
   }
 
+  .row.project-row-1.project-row {
+    height: 1000px;
+}
+
   .typewriter {
     color: #ff9d00 !important;
     font-family: "Courier New" !important;
@@ -869,7 +873,7 @@ Media Queries
   .project-1, .project-2, .project-3, .project-4 {
     width: 100%;
     max-width: 500px;
-    height: 350px;
+    /* height: 350px; */
     background-size: cover;
   }
 
