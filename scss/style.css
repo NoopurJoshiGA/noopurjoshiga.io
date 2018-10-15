@@ -818,6 +818,13 @@ Media Queries
     font-size: 1.4rem;
   }
 
+  .typewriter {
+    color: #ff9d00 !important;
+    font-family: "Courier New" !important;
+    text-align: center;
+    font-weight: 500;
+}
+
   .about {
     height: auto;
     padding-bottom: 20px;
