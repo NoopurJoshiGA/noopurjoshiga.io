@@ -819,7 +819,7 @@ Media Queries
   }
 
   .row.project-row-1.project-row {
-    height: 800px;
+    height: 500px;
 }
 
 #typed-strings {
@@ -840,7 +840,7 @@ Media Queries
 
   .about {
     height: auto;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
   }
 
   .row {
@@ -882,7 +882,7 @@ Media Queries
   .project-1, .project-2, .project-3, .project-4 {
     width: 100%;
     max-width: 500px;
-    /* height: 350px; */
+    height: 350px;
     background-size: cover;
   }
 
