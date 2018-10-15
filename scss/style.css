@@ -822,6 +822,18 @@ Media Queries
     height: 500px;
 }
 
+.row.project-row.project-row-2 {
+  height: 500px;
+}
+
+.row.project-row.project-row-3 {
+  height: 500px;
+}
+
+.row.project-row.project-row-4 {
+  height: 500px;
+}
+
 #typed-strings {
     display: none;
 }
@@ -866,7 +878,7 @@ Media Queries
 
   .project {
     padding-bottom: 50px;
-    height: auto;
+    /* height: auto; */
   }
 
   .project-row {
@@ -876,13 +888,13 @@ Media Queries
     justify-content: center !important;
     align-items: center !important;
     padding: 0px !important;
-    height: 1000px;
+    /* height: 1000px; */
   }
 
   .project-1, .project-2, .project-3, .project-4 {
     width: 100%;
     max-width: 500px;
-    height: 350px;
+    /* height: 350px; */
     background-size: cover;
   }
 
