@@ -819,14 +819,23 @@ Media Queries
   }
 
   .row.project-row-1.project-row {
-    height: 1000px;
+    height: 800px;
 }
 
-  .typewriter {
-    color: #ff9d00 !important;
-    font-family: "Courier New" !important;
-    text-align: center;
-    font-weight: 500;
+#typed-strings {
+    display: none;
+}
+
+.typed-cursor, .typed-cursor--blink {
+  color: #ff9d00;
+}
+
+.typewriter {
+  color: #ff9d00 !important;
+  font-family: "Courier New" !important;
+  text-align: center;
+  font-weight: 500;
+  /* padding: 10px 0 10px 0; */
 }
 
   .about {
